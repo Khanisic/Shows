@@ -1,5 +1,5 @@
 async function shows(query){
-    let showDetails = await fetch('http://api.tvmaze.com/search/shows?q='+ query)
+    let showDetails = await fetch('https://api.tvmaze.com/search/shows?q='+ query)
     showDetails=await showDetails.json();
     let container =document.createElement('div');
     container.setAttribute('class','container');
